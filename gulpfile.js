@@ -18,9 +18,9 @@ gulp.task('serve', function(cb) {
 gulp.task('build', ['delete'], function(cb) {
   runSequence(
     [
-      'code-review'
-    ], [
-      'sass',
+      //'code-review'
+    //], [
+      'scss',
       'jade',
       'copy',
       'copy-images'
@@ -35,7 +35,7 @@ gulp.task('build', ['delete'], function(cb) {
 // Load tasks from the `tasks` directory
 var tasks;
 try {
-  tasks = require('require-dir')('tasks');
+  tasks = require('require-dir')('gulp-tasks');
 } catch (err) {
   console.error(err);
 }
