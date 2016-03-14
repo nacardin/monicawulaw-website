@@ -1,41 +1,10 @@
-'use strict';
-
-var gulp = require('gulp');
-gulp.environment = {};
-gulp.devDeps = {};
-
-var runSequence = require('run-sequence');
-
-gulp.task('default', function(cb) {
-  runSequence('build', 'hash', cb);
+System.register([], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
+    return {
+        setters:[],
+        execute: function() {
+        }
+    }
 });
-
-gulp.task('serve', function(cb) {
-  gulp.environment.development = true;
-  runSequence('watch', cb);
-});
-
-gulp.task('build', ['delete'], function(cb) {
-  runSequence(
-    [
-      //'code-review'
-    //], [
-      'scss',
-      'jade',
-      'copy',
-      'copy-images'
-    ], [
-      'styles',
-      'jademin-uglify',
-      'localize'
-    ],
-    cb);
-});
-
-// Load tasks from the `tasks` directory
-var tasks;
-try {
-  tasks = require('require-dir')('gulp-tasks');
-} catch (err) {
-  console.error(err);
-}
+//# sourceMappingURL=gulpfile.js.map
