@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.app-navbar-brand {
+  padding-top:    .25rem;
+  padding-bottom: .25rem;
+  margin-right: 1rem;
+  font-size: $font-size-lg;
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: block;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .app-navbar-nav {
+    .nav-item {
+      float: left;
+    }
+
+    .nav-link {
+      display: block;
+      padding-top: .425rem;
+      padding-bottom: .425rem;
+
+      + .nav-link {
+        margin-left: 1rem;
+      }
+    }
+
+    .nav-item + .nav-item {
+      margin-left: 1rem;
+    }
+  }
+
+  .app-navbar-brand {
+    float: left;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+
+  .app-navbar-nav {
+    .nav-item {
+      display: block;
+      float: none;
+
+      + .nav-item {
+        margin-top: .2rem;
+        margin-left: 0;
+      }
+    }
+  }
+
+}
+
