@@ -8,6 +8,7 @@ import {NgClass} from 'angular2/common';
 
 import './app.scss'
 import {Home} from './home/home';
+import {About} from './about/about';
 
 /*
  * App Component
@@ -21,10 +22,9 @@ import {Home} from './home/home';
     template: require('./app.html')
 })
 @RouteConfig([
-    {path: '/', name: 'Index', component: Home, useAsDefault: true},
-    {path: '/home', name: 'Home', component: Home},
+    {path: '/', name: 'Home', component: Home, useAsDefault: true},
     // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-    {path: '/about', name: 'About', loader: () => require('es6-promise!./about/about')('About')},
+    {path: '/about', name: 'About', component: About},
 ])
 export class App {
     name = 'App';
