@@ -1,29 +1,37 @@
-<header>
-  <nav class="navbar navbar-light bg-faded">
-    <button class="navbar-toggler hidden-md-up" type="button" (click)="showMenu=!showMenu">
+<div [ngClass]="{'wu-bg-blue': isHomePage}">
+  <header class="navbar"
+          [ngClass]="{'navbar-dark': isHomePage, 'navbar-light': !isHomePage}">
+    <button class="navbar-toggler nav-link hidden-md-up" type="button" (click)="showMenu=!showMenu">
       &#9776;
     </button>
-    <div class="collapse navbar-toggleable-sm" [ngClass]="{collapse: !showMenu}">
-      <a class="app-navbar-brand" [routerLink]="['Home']">Monica Wu</a>
-      <ul class="nav app-navbar-nav">
+    <a class="navbar-brand" [routerLink]="['Home']">
+      <h1>Monica Wu</h1>
+
+      <h2>Attorney at Law</h2>
+    </a>
+    <nav class="collapse navbar-toggleable-sm" [ngClass]="{collapse: !showMenu}">
+      <ul class="nav navbar-nav">
         <li class="nav-item" router-active>
-          <a class="nav-link" [routerLink]="['About']">About Us</a>
+          <a class="nav-link" [routerLink]="['Services']">Practice Areas</a>
         </li>
         <li class="nav-item" router-active>
-          <a class="nav-link" [routerLink]="['Services']">Services</a>
-        </li>
-        <li class="nav-item" router-active>
-          <a class="nav-link" [routerLink]="['Location']">Our Office</a>
-      </li>
-        <li class="nav-item" router-active>
-          <a class="nav-link" [routerLink]="['Testimonials']">Testimonials</a>
+          <a class="nav-link" [routerLink]="['Contact']">John's Creek Office</a>
         </li>
       </ul>
+    </nav>
+
+  </header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <footer>
+    <div class="wu-footer-info">
+      <div>10475 Medlock Bridge Rd. Bldg 300, Ste 310 Johns Creek, GA 30097</div>
+      <div>ph: +1 (678) 691-4789 | fax: +1 (470) 545-9416</div>
+      <div><a href="mailto:info@monicawulaw.com">info@monicawulaw.com</a></div>
     </div>
-  </nav>
-</header>
-<main>
-  <router-outlet></router-outlet>
-</main>
-<footer>
-</footer>
+    <div class="wu-copyright">
+      © 2016 Monica Wu, P.C.
+    </div>
+  </footer>
+</div>

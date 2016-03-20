@@ -8,38 +8,34 @@ import {NgClass} from 'angular2/common';
 
 import './app.scss'
 import {Home} from './home/home';
-import {About} from './about/about';
+import {Contact} from './contact/contact';
+import {Services} from './services/services';
 
 /*
  * App Component
  * Top Level Component
  */
 @Component({
-    selector: 'app',
-    pipes: [],
-    providers: [],
-    directives: [Alert, NgClass],
-    template: require('./app.html')
+  selector: 'app',
+  pipes: [],
+  providers: [],
+  directives: [Alert, NgClass],
+  template: require('./app.html')
 })
 @RouteConfig([
-    {path: '/', name: 'Home', component: Home, useAsDefault: true},
-    // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-    {path: '/about', name: 'About', component: About},
+  {path: '/', name: 'Home', component: Home, useAsDefault: true},
+  {path: '/services', name: 'Services', component: Services},
+  {path: '/contact', name: 'Contact', component: Contact},
 ])
 export class App {
-    name = 'App';
-    url = 'https://twitter.com/AngularClass';
-    date:Date = new Date();
-    showMenu = false;
+  name = 'Monica Wu';
+  url = 'https://www.monicawulaw.com';
+  showMenu = false;
+  isHomePage : boolean;
 
-    constructor() {
-    }
+  constructor(public router:Router) {
+    router.subscribe((value:any) => {
+      this.isHomePage = value == '';
+    });
+  }
 }
-
-/*
- * Please review the https://github.com/AngularClass/angular2-examples/ repo for
- * more angular app examples that you may copy/paste
- * (The examples may not be updated as quickly. Please open an issue on github for us to update it)
- * For help or questions please contact us at @AngularClass on twitter
- * or our chat on Slack at https://AngularClass.com/slack-join
- */

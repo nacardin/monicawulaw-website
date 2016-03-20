@@ -1,59 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic");
+
+$font-family-sans-serif: "Karla", sans-serif;
+$navbar-dark-color: #fff;
 @import "~bootstrap/scss/bootstrap.scss";
+@import "styles/navbar";
 
-.app-navbar-brand {
-  padding-top:    .25rem;
-  padding-bottom: .25rem;
-  margin-right: 1rem;
-  font-size: $font-size-lg;
+.wu-bg-blue {
+  background-color: #1f4096;
+  background-image: linear-gradient(-179deg, #19357c 0%, #2347a8 100%);
+}
 
-  @include hover-focus {
-    text-decoration: none;
-  }
+.wu-masthead {
+  padding: 1px 2rem;
+  color: #cdbfe3;
+  text-align: center;
 
-  > img {
+  &__logo {
+    width: 64px;
+    margin: 3rem auto;
     display: block;
   }
-}
 
-@include media-breakpoint-up(md) {
-  .app-navbar-nav {
-    .nav-item {
-      float: left;
-    }
+  &__title {
+    @include center-block;
+    font-size: 1.75rem;
+    margin: 3rem 0;
+  }
 
-    .nav-link {
+  &__sub-title {
+    @include center-block;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+  }
+
+  &__services {
+    list-style: none;
+    padding: 0;
+    @include clearfix;
+    > li {
       display: block;
-      padding-top: .425rem;
-      padding-bottom: .425rem;
+      margin: 4rem 0;
 
-      + .nav-link {
-        margin-left: 1rem;
+      @include media-breakpoint-up(sm) {
+        float: left;
+        width: 50%;
+        height: 5rem;
+      }
+      @include media-breakpoint-up(md) {
+        width: 25%;
+      }
+      > h2 {
+        font-size: 1.15rem;
+        margin-top: 1rem;
+      }
+      > img {
+        @include center-block;
+        width: 64px;
+        @include media-breakpoint-up(sm) {
+          display: block;
+          width: 48px;
+        }
       }
     }
-
-    .nav-item + .nav-item {
-      margin-left: 1rem;
-    }
   }
 
-  .app-navbar-brand {
-    float: left;
+  &__actions {
+    margin: 2rem 0;
   }
 }
 
-@include media-breakpoint-down(sm) {
-
-  .app-navbar-nav {
-    .nav-item {
-      display: block;
-      float: none;
-
-      + .nav-item {
-        margin-top: .2rem;
-        margin-left: 0;
-      }
-    }
-  }
-
+.wu-featurette {
+  background: #fff;
+  padding: 3rem 2rem;
+  border-bottom: 1px solid $hr-border-color;
 }
 
+.wu-headshot {
+  float: left;
+  margin-right: 3rem;
+}
+
+.wu-profile {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  padding: 2rem;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.wu-copyright {
+}
