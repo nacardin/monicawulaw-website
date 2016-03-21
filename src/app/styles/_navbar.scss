@@ -1,0 +1,58 @@
+@include media-breakpoint-up(md) {
+  .navbar-nav {
+    float: right;
+  }
+}
+
+.navbar-nav {
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  display: block;
+  > h1 {
+    font-size: 1.75rem;
+    margin: 0;
+  }
+  > h2 {
+    font-size: 0.75rem;
+    margin: 0.15rem 0;
+  }
+}
+
+.navbar-toggler {
+  line-height: 2rem;
+  vertical-align: middle;
+}
+
+.navbar-dark {
+  color: $navbar-dark-color;
+}
+.navbar-light {
+  color: $navbar-light-color;
+}
+
+.wu-nav-phone {
+  > a {
+    color: inherit;
+  }
+  padding: 0.425rem 1rem;
+}
+
+@include media-breakpoint-down(sm) {
+
+  .navbar-nav {
+    .nav-item {
+      float: none;
+    }
+  }
+
+  .navbar-brand {
+    float: none;
+  }
+
+}
+
+.navbar-toggler {
+  float: right;
+}
