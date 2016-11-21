@@ -2,8 +2,9 @@
 
 $font-family-sans-serif: "Karla", sans-serif;
 $navbar-dark-color: #fff;
-@import "~bootstrap/scss/bootstrap.scss";
-@import "styles/navbar";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "mixins";
+@import "navbar";
 
 .wu-bg-blue {
   background-color: #1f4096;
@@ -62,10 +63,6 @@ $navbar-dark-color: #fff;
         }
       }
     }
-  }
-
-  &__actions {
-    margin: 2rem 0;
   }
 }
 

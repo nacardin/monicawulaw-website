@@ -2,126 +2,90 @@
 
 {% block body %}
 
-<div [ngClass]="{'wu-bg-blue': isHomePage}">
-  <header class="navbar"
-          [ngClass]="{'navbar-dark': isHomePage, 'navbar-light': !isHomePage}">
-    <button class="navbar-toggler nav-link hidden-md-up" type="button" (click)="showMenu=!showMenu">
-      &#9776;
-    </button>
-    <a class="navbar-brand" [routerLink]="['Home']">
+<div class="wu-bg-blue">
+  <header class="navbar navbar-dark container">
+    <a class="navbar-brand">
       <h1>Monica Wu</h1>
-
       <h2>Attorney at Law</h2>
     </a>
-    <nav class="collapse navbar-toggleable-sm" [ngClass]="{collapse: !showMenu}">
-      <ul class="nav navbar-nav">
-        <li class="nav-item" router-active>
-          <a class="nav-link" [routerLink]="['Services']">Practice Areas</a>
-        </li>
-        <li class="nav-item" router-active>
-          <a class="nav-link" [routerLink]="['Contact']">Office Location</a>
-        </li>
-      </ul>
-    </nav>
-
   </header>
   <main>
     <section class="wu-masthead">
-      <img class="wu-masthead__logo" src="assets/logo.svg"/>
-      <h1 class="wu-masthead__title">Immigration Counseling and Representation</h1>
-      <h2 class="wu-masthead__sub-title">
-        We listen and analyze our clients' needs, providing caring, supportive legal advice.
-      </h2>
-      <ul class="wu-masthead__services">
-        <li>
-          <img src="assets/icon-employment.svg">
-          <h2>Employment Based Immigration</h2>
-        </li>
-        <li>
-          <img src="assets/icon-family.svg">
-          <h2>Family Based Immigration</h2>
-        </li>
-        <li>
-          <img src="assets/icon-citizenship.svg">
-          <h2>Citizenship</h2>
-        </li>
-        <li>
-          <img src="assets/icon-business.svg">
-          <h2>Business Immigration</h2>
-        </li>
-        <li>
-          <img src="assets/icon-change.svg">
-          <h2>Other</h2>
-        </li>
-      </ul>
-      <div class="wu-masthead__actions">
-        <a class="btn btn-secondary-outline" [routerLink]="['Services']">Learn More</a>
-        <a class="btn btn-primary" [routerLink]="['Contact']">Get Started</a>
+      <div class="container">
+        <img class="wu-masthead__logo" src="assets/logo.svg"/>
+        <h1 class="wu-masthead__title">Immigration Counseling and Representation</h1>
+        <h2 class="wu-masthead__sub-title">
+          We listen and analyze our clients' needs, providing caring, supportive legal advice.
+        </h2>
+        <ul class="wu-masthead__services">
+          <li>
+            <img src="assets/icon-employment.svg">
+            <h2>Employment Based Immigration</h2>
+          </li>
+          <li>
+            <img src="assets/icon-family.svg">
+            <h2>Family Based Immigration</h2>
+          </li>
+          <li>
+            <img src="assets/icon-citizenship.svg">
+            <h2>Citizenship</h2>
+          </li>
+          <li>
+            <img src="assets/icon-business.svg">
+            <h2>Business Immigration</h2>
+          </li>
+          <li>
+            <img src="assets/icon-change.svg">
+            <h2>Other</h2>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="wu-featurette">
-      <h2>About Monica Wu</h2>
-      <div class="clearfix wu-profile">
-        <img class="wu-headshot" src="assets/monica.png">
-        <p>
-          Monica Wu is the founding partner of Monica Wu, P.C. and is a leading immigration lawyer in the Atlanta area. Prior
-          to opening her private practice, Monica spent three years as an immigration attorney in one of Atlanta's most
-          prestigious immigration law firms. Monica specializes in H-1B and L-1 Visa, Labor Certification, EB-1 and EB-2 and
-          EB-3, EB-5 Immigrant Investor, and has extensive experience in Family-based green card applications. Monica received
-          her Bachelors of Law from Peking University and her Masters of Law from Washington University in St. Louis and is
-          licensed by the State Bar of New York. Monica is fluent in English and Mandarin Chinese.
-        </p>
+      <div class="container">
+        <h2>About Monica Wu</h2>
+        <div class="clearfix wu-profile">
+          <img class="wu-headshot" src="assets/monica.png">
+          <p>
+            Monica Wu is the founding partner of Monica Wu, P.C. and is a leading immigration lawyer in the Atlanta area. Prior
+            to opening her private practice, Monica spent three years as an immigration attorney in one of Atlanta's most
+            prestigious immigration law firms. Monica specializes in H-1B and L-1 Visa, Labor Certification, EB-1 and EB-2 and
+            EB-3, EB-5 Immigrant Investor, and has extensive experience in Family-based green card applications. Monica received
+            her Bachelors of Law from Peking University and her Masters of Law from Washington University in St. Louis and is
+            licensed by the State Bar of New York. Monica is fluent in English and Mandarin Chinese.
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="wu-featurette">
-      <h2>Contact Us</h2>
+      <div class="container">
+        <h2>Come See Us</h2>
 
-      <div>mwu@monicawulaw.com</div>
-      <div>(855) 392-2167</div>
-      <div>(678) 691-4789</div>
-      <div>(470) 545-9416</div>
-    </section>
-    <section class="wu-featurette">
-      <h2>Hours of Operation</h2>
+        <div class="my-3">
+          <div>Monday - Friday: 8:30 am - 5:30 pm EST</div>
+          <div>Saturday: 9 am - 5 pm EST (By appointment only)</div>
+          <div>Sunday: 9 am - 12 pm EST (By appointment only)</div>
+        </div>
+        <div class="my-3">
+          <div><a href="mailto:mwu@monicawulaw.com">mwu@monicawulaw.com</a></div>
+          <div>Toll-Free: +1 (855) 392-2167</div>
+          <div>Outside U.S. +1 (678) 691-4789</div>
+          <div>Fax: +1 (470) 545-9416</div>
+        </div>
 
-      <div>Monday - Friday: 8:30 am - 5:30 pm EST</div>
-      <div>Saturday: 9 am - 5 pm EST (By appointment only)</div>
-      <div>Sunday: 9 am - 12 pm EST (By appointment only)</div>
-    </section>
-    <section class="wu-featurette">
-      <h2>Visit Our Office</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.365438005206!2d-84.18683968432791!3d34.03449588061067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f598b53cb1c3ed%3A0x2211431627d5356a!2s10475+Medlock+Bridge+Rd+%23310%2C+Johns+Creek%2C+GA+30097!5e0!3m2!1sen!2sus!4v1458483056010"
-        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-      <div class="paragraph" style="text-align:left;">
-        <strong style="line-height: 1.5;">Directions from I-285 (Marietta/Kennesaw):</strong><br>-Head East on I-285<br>-Take Exit 31B for Peachtree Industrial Blvd towards State
-        Hwy 141 N<br>-Stay left to merge onto GA-141/Peachtree Industrial Blvd<br>-Drive 8.5 miles<br>-Turn right onto
-        Wilson Rd at the intersection of Medlock Bridge Rd/Wilson Rd<br>-Turn left into Ivy Falls Business Park<br>-Office
-        will be on the right (Building 300, Suite 310)<br><br><strong>Directions from GA-400
-        (Roswell/Alpharetta)</strong><br>-Take Exit 10 GA-120/Old Milton Parkway<br>-Head East on Old Milton Parkway<br>-Drive
-        5.8 miles<br>-Turn left onto Medlock Bridge Rd at the intersection of Medlock Bridge Rd/State Bridge Rd<br>-Drive
-        1.1 miles<br>-Turn right onto Wilson Rd at the intersection of Medlock Bridge Rd/Wilson Rd<br>-Turn left into Ivy
-        Falls Business Park<br>-Office will be on the right (Building 300, Suite 310)<br><br><strong>Directions from the
-        Airport (South Atlanta)</strong><br>-Take I-85 North<br>-Drive 22.4 miles&nbsp;<br>-Take Exit 95, I-285 W towards
-        Chattanooga<br>-Take Exit 31B for Peachtree Industrial Blvd towards State Hwy 141 N<br>-Stay left to merge onto
-        GA-141/Peachtree Industrial Blvd<br>-Drive 8.5 miles<br>-Turn right onto Wilson Rd at the intersection of Medlock
-        Bridge Rd/Wilson Rd<br>-Turn left into Ivy Falls Business Park<br>-Office will be on the right (Building 300, Suite
-        310)<br><br><strong>Directions from Gwinnett County (Duluth/Lawrenceville/Buford)</strong><br>-Take I-85 South<br>-Take
-        Exit 109, Old Peachtree Rd NW<br>-Bear right at the ramp, head West on Old Peachtree Rd NW<br>-Turn right onto
-        Sugarloaf Parkway at the intersection of Old Peachtree Rd NW/Sugarloaf Parkway<br>-Turn left onto Peachtree
-        Industrial Blvd at the intersection of Peachtree Industrial Blvd/Sugarloaf Parkway<br>-Turn right onto Duluth
-        Hwy/GA-120<br>-Bear left at the fork towards Parsons Rd at the fork between Parsons Rd and Abbots Bridge
-        Rd/GA-120<br>-Turn left onto Wilson Rd<br>-Turn right into Ivy Falls Business Park<br>-Office will be on the right
-        (Building 300, Suite 310)<br>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.365438005206!2d-84.18683968432791!3d34.03449588061067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f598b53cb1c3ed%3A0x2211431627d5356a!2s10475+Medlock+Bridge+Rd+%23310%2C+Johns+Creek%2C+GA+30097!5e0!3m2!1sen!2sus!4v1458483056010"
+          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </section>
 
   </main>
   <footer>
+    <div class="container">
     <div class="wu-copyright">
-      © {{year}} Monica Wu, P.C.
+      © {{year}} Monica Wu, P.C. All rights reserved.
+    </div>
     </div>
   </footer>
 </div>
