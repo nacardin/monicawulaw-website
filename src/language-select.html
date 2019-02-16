@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Monica Wu - Immigration Law</title>
+  <script>
+    var supportedLocales = ['en', 'zh'];
+    var defaultLocale = 'en';
+
+    var language = navigator.language || navigator.browserLanguage;
+    var browserLocale = language.substr(0, 2);
+
+    var locale = (browserLocale && supportedLocales.indexOf(browserLocale) !== -1) ? browserLocale : defaultLocale;
+
+    window.location.replace('/' + locale + '/');
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

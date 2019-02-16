@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+  <file original="ng.template" id="ngi18n">
+    <unit id="5140020799954673875">
+      <notes>
+        <note category="location">app/app.component.html:6</note>
+      </notes>
+      <segment>
+        <source>Immigration Attorney</source>
+      </segment>
+    </unit>
+    <unit id="7758508987536472176">
+      <notes>
+        <note category="location">app/home/home.component.html:3</note>
+      </notes>
+      <segment>
+        <source>Immigration &amp; Naturalization Legal Services</source>
+      </segment>
+    </unit>
+    <unit id="1447151298525026814">
+      <notes>
+        <note category="location">app/home/home.component.html:4,6</note>
+      </notes>
+      <segment>
+        <source>
+      We listen and analyze our clients&apos; needs, providing caring, supportive legal advice.
+    </source>
+      </segment>
+    </unit>
+    <unit id="439306632746092988">
+      <notes>
+        <note category="location">app/home/home.component.html:9</note>
+      </notes>
+      <segment>
+        <source>Practice Areas</source>
+      </segment>
+    </unit>
+    <unit id="7532404993204943414">
+      <notes>
+        <note category="location">app/home/home.component.html:13</note>
+      </notes>
+      <segment>
+        <source>Employment Based Immigration</source>
+      </segment>
+    </unit>
+    <unit id="5319632538982900386">
+      <notes>
+        <note category="location">app/home/home.component.html:17</note>
+      </notes>
+      <segment>
+        <source>Family Based Immigration</source>
+      </segment>
+    </unit>
+    <unit id="2896343608379732877">
+      <notes>
+        <note category="location">app/home/home.component.html:21</note>
+      </notes>
+      <segment>
+        <source>Citizenship</source>
+      </segment>
+    </unit>
+    <unit id="6807152161362667381">
+      <notes>
+        <note category="location">app/home/home.component.html:25</note>
+      </notes>
+      <segment>
+        <source>Business Immigration</source>
+      </segment>
+    </unit>
+    <unit id="7021254724335031153">
+      <notes>
+        <note category="location">app/home/home.component.html:33</note>
+      </notes>
+      <segment>
+        <source>About Monica Wu</source>
+      </segment>
+    </unit>
+    <unit id="3053156104165917976">
+      <notes>
+        <note category="location">app/home/home.component.html:36,46</note>
+      </notes>
+      <segment>
+        <source>
+          Monica Wu has practiced immigration and nationality laws since 2012 and established her own
+          practice in 2013. Her practice focuses on employment-based immigration, including H-1B 
+          visa, L visa, PERM, EB1, EB2, EB3, TN visa, O-1 visa, E visa, etc; and family-sponsored 
+          immigration, including immediate relative, family-based preference categories, fiancé(e) 
+          visa, etc. She also provides legal services for naturalization, citizenship through U.S. 
+          citizen spouses or parents, change of status and extension of status applications. She 
+          obtained a Bachelor of Laws degree (LL.B.) from Peking University Law School, and a Master 
+          of Laws degree (LL.M.) from Washington University School of Law. She is licensed in New 
+          York and practice immigration and nationality laws only. Monica speaks Mandarin Chinese.
+        </source>
+      </segment>
+    </unit>
+    <unit id="8875670014920522641">
+      <notes>
+        <note category="location">app/home/home.component.html:53</note>
+      </notes>
+      <segment>
+        <source>Appointments</source>
+      </segment>
+    </unit>
+    <unit id="8070396816726827304">
+      <notes>
+        <note category="location">app/home/home.component.html:56</note>
+      </notes>
+      <segment>
+        <source>Hours</source>
+      </segment>
+    </unit>
+    <unit id="8260672838152285357">
+      <notes>
+        <note category="location">app/home/home.component.html:57</note>
+      </notes>
+      <segment>
+        <source>by appointment only</source>
+      </segment>
+    </unit>
+    <unit id="6304432362546770951">
+      <notes>
+        <note category="location">app/home/home.component.html:59</note>
+      </notes>
+      <segment>
+        <source>Address</source>
+      </segment>
+    </unit>
+    <unit id="3262236020277300799">
+      <notes>
+        <note category="location">app/home/home.component.html:68</note>
+      </notes>
+      <segment>
+        <source>Phone</source>
+      </segment>
+    </unit>
+    <unit id="4768749765465246664">
+      <notes>
+        <note category="location">app/home/home.component.html:71</note>
+      </notes>
+      <segment>
+        <source>Email</source>
+      </segment>
+    </unit>
+    <unit id="791988267498679324">
+      <notes>
+        <note category="location">app/home/home.component.html:74</note>
+      </notes>
+      <segment>
+        <source>Fax</source>
+      </segment>
+    </unit>
+  </file>
+</xliff>

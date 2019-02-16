@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,500");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,500");
+
+$font-family-sans-serif: "Karla", sans-serif;
+$font-family-serif: "Merriweather", sans-serif;
+$headings-font-family: $font-family-serif;
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/grid";

@@ -1,0 +1,167 @@
+@import "bootstrap";
+@import "mixins";
+
+body {
+  background-color: #1f4096;
+  background-image: linear-gradient(-179deg, #19357c 0%, #2347a8 100%);
+}
+
+.brand {
+  padding: 16px 0;
+  &__logo {
+    margin: 0 16px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 64px;
+    height: 64px;
+  }
+  &__text {
+    color: $light;
+    display: inline-block;
+    vertical-align: middle;
+    > h1 {
+      font-size: 1.75rem;
+      margin: 0;
+    }
+    > h2 {
+      font-size: 1rem;
+      margin: 0.15rem 0;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    &__logo {
+      width: 48px;
+      height: 48px;
+    }
+    &__text {
+      > h1 {
+        font-size: 1.5rem;
+      }
+      > h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.wu-masthead {
+  padding: 1rem 2rem;
+  color: #cdbfe3;
+  text-align: center;
+
+  &__title {
+    @include center-block;
+    font-size: 1.75rem;
+    margin: 2rem 0;
+
+    @include media-breakpoint-down(xs) {
+      margin: 1rem 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__sub-title {
+    @include center-block;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+
+  &__practice-areas {
+    padding: 2rem 0;
+    @include media-breakpoint-up(sm) {
+      padding: 0;
+    }
+    > h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      @include media-breakpoint-up(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &__services {
+    list-style: none;
+    padding: 0;
+    @include clearfix;
+    > li {
+      display: block;
+      margin: 1rem 0;
+
+      @include media-breakpoint-up(sm) {
+        margin: 4rem 0;
+        float: left;
+        font-size: 1.15rem;
+        width: 50%;
+      }
+      @include media-breakpoint-up(md) {
+        width: 25%;
+      }
+
+      > h3 {
+        font-family: $font-family-sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 1rem;
+      }
+
+      > img {
+        display: none;
+        @include media-breakpoint-up(sm) {
+          display: inline-block;
+          width: 48px;
+        }
+      }
+    }
+  }
+}
+
+.wu-featurette {
+  background: #fff;
+  padding: 3rem 2rem;
+  border-bottom: 1px solid $hr-border-color;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+}
+
+.wu-headshot {
+  width: 100%;
+  margin-bottom: 2rem;
+  @include media-breakpoint-up(sm) {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 2rem;
+    float: left;
+  }
+}
+
+.wu-profile {
+  @include clearfix;
+}
+
+footer {
+  padding: 2rem;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.appointments {
+  &__dl {
+    display: inline-block;
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+    }
+  }
+}
+
+.map {
+  @include media-breakpoint-down(xs) {
+    margin-left: -47px;
+    margin-right: -47px;
+    width: 100vw;
+  }
+}
