@@ -14,10 +14,7 @@
     "url": "git+https://github.com/nacardin/monicawulaw-website.git"
   },
   "author": "Nick Cardin <nick@cardin.email>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/nacardin/monicawulaw-website/issues"
-  },
+  "license": "LicenseRef-LICENSE",
   "homepage": "https://github.com/nacardin/monicawulaw-website#readme",
   "dependencies": {
     "autoprefixer": "^6.5.3",
