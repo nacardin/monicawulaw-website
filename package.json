@@ -18,7 +18,8 @@
     "compile:server": "tsc -p server.tsconfig.json",
     "generate:prerender": "cp src/language-select.html dist/browser/index.html && cd dist && node prerender",
     "serve:prerender": "cd dist/browser && http-server",
-    "serve:ssr": "node dist/server"
+    "serve:ssr": "node dist/server",
+    "deploy": "ts-node ghp-deploy.ts"
   },
   "private": true,
   "dependencies": {
@@ -49,9 +50,12 @@
     "@types/node": "~8.9.4",
     "bootstrap": "4.3.1",
     "codelyzer": "~4.5.0",
+    "gh-pages": "^2.0.1",
     "http-server": "~0.10.0",
     "pre-commit": "~1.2.2",
+    "replace-in-file": "^3.4.3",
     "ts-loader": "~4.2.0",
+    "ts-node": "^8.0.2",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
   }
