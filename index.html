@@ -1,66 +1,22 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html>
+
 <head>
-
   <title>Monica Wu - Immigration Law</title>
+  <script>
+    var supportedLocales = ['en', 'zh'];
+    var defaultLocale = 'en';
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="immigration attorney, immigration lawyer, lawyer, attorney, work visa, visa, green card" />
-  <meta property="og:description" content="We objectively listen and analyze our clients&#039; needs, providing caring, supportive legal advice. To our clients, we always have your best interests in mind when assisting you with your immigration..." />
-  
-  <meta property="og:site_name" content="Monica Wu - Immigration Law" />
-  <meta property="og:title" content="Monica Wu, P.C. - Attorney at Law and Immigration Specialist - Serving Atlanta, GA" />
-  <meta property="og:description" content="We objectively listen and analyze our clients&#039; needs, providing caring, supportive legal advice. To our clients, we always have your best interests in mind when assisting you with your immigration..." />
-  <!--<meta property="og:image" content="http://www.monicawulaw.com/uploads/2/2/9/6/22961400/852953228.gif" />-->
-  <meta property="og:url" content="http://www.monicawulaw.com/" />
+    var language = navigator.language || navigator.browserLanguage;
+    var browserLocale = language.substr(0, 2);
 
-  <!-- use http://www.favicon-generator.org/ to replace files in public/icon-->
-  <!--<link rel="apple-touch-icon" sizes="57x57" href="/assets/icon/apple-icon-57x57.png">-->
-  <!--<link rel="apple-touch-icon" sizes="60x60" href="/assets/icon/apple-icon-60x60.png">-->
-  <!--<link rel="apple-touch-icon" sizes="72x72" href="/assets/icon/apple-icon-72x72.png">-->
-  <!--<link rel="apple-touch-icon" sizes="76x76" href="/assets/icon/apple-icon-76x76.png">-->
-  <!--<link rel="apple-touch-icon" sizes="114x114" href="/assets/icon/apple-icon-114x114.png">-->
-  <!--<link rel="apple-touch-icon" sizes="120x120" href="/assets/icon/apple-icon-120x120.png">-->
-  <!--<link rel="apple-touch-icon" sizes="144x144" href="/assets/icon/apple-icon-144x144.png">-->
-  <!--<link rel="apple-touch-icon" sizes="152x152" href="/assets/icon/apple-icon-152x152.png">-->
-  <!--<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-icon-180x180.png">-->
-  <!--<link rel="icon" type="image/png" sizes="192x192"  href="/assets/icon/android-icon-192x192.png">-->
-  <!--<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">-->
-  <!--<link rel="icon" type="image/png" sizes="96x96" href="/assets/icon/favicon-96x96.png">-->
-  <!--<link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">-->
-  <!--<link rel="manifest" href="/assets/manifest.json">-->
+    var locale = (browserLocale && supportedLocales.indexOf(browserLocale) !== -1) ? browserLocale : defaultLocale;
 
-  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" crossorigin="anonymous">
-
-  <meta name="msapplication-TileColor" content="#00bcd4">
-  <!--<meta name="msapplication-TileImage" content="/assets/icon/ms-icon-144x144.png">-->
-  <meta name="theme-color" content="#00bcd4">
-  <!-- end favicon -->
-
-  <!-- base url -->
-  <base href="/monicawulaw-website/">
-
+    window.location.replace('/' + locale + '/');
+  </script>
 </head>
 
 <body>
+</body>
 
-<app>
-  Loading...
-</app>
-
-<!-- Google Analytics: change UA-71073175-1 to be your site's ID -->
-<script>
-//  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-//        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-//      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-//  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-//  ga('create', 'UA-71073175-1', 'auto');
-//  ga('send', 'pageview');
-</script>
-
-
-
-<script src="polyfills.213d4f106d72bd70f50b.bundle.js"></script><script src="vendor.0e1af4537e07ebb921e9.bundle.js"></script><script src="app.10faee08779d577caedb.bundle.js"></script></body>
 </html>
