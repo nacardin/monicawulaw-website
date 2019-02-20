@@ -12,7 +12,7 @@
 
     var locale = (browserLocale && supportedLocales.indexOf(browserLocale) !== -1) ? browserLocale : defaultLocale;
 
-    window.location.replace('/' + locale + '/');
+    window.location.replace(window.location.href.replace(/\/$/, "") + '/' + locale + '/');
   </script>
 </head>
 
