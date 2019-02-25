@@ -40,17 +40,15 @@ app.get('*.*', express.static(join(DIST_FOLDER, 'browser'), {
   maxAge: '1y'
 }));
 
-// All regular routes use the Universal engine
-app.get('*', (req, res) => {
-  //this is for i18n
+app.get('/', (req, res) => {
   const supportedLocales = ['en', 'zh'];
-  const defaultLocale = 'en';
-  const matches = req.url.match(/^\/([a-z]{2}(?:-[A-Z]{2})?)\//);
+  var locale = req.acceptsLanguages(supportedLocales);
+  res.redirect(`/${locale}`);
+});
 
-  //check if the requested url has a correct format '/locale' and matches any of the supportedLocales
-  const locale = (matches && supportedLocales.indexOf(matches[1]) !== -1) ? matches[1] : defaultLocale;
-
-  res.render(`${locale}/index`, { req });
+// All regular routes use the Universal engine
+app.get('/:locale', (req, res) => {
+  res.render(`${req.params.locale}/index`, { req });
 });
 
 // Start up the Node server
