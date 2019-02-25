@@ -12,7 +12,7 @@
     "start": "ng serve",
     "build": "ng build",
     "lint": "ng lint monicawulaw-website",
-    "build:client-and-server-bundles": "ng run monicawulaw-website:build:production-en && ng run monicawulaw-website:build:production-zh && ng run monicawulaw-website:server:production && ng run monicawulaw-website:server:production",
+    "build:client-and-server-bundles": "./build-client-and-server-bundles.sh",
     "build:prerender": "yarn run build:client-and-server-bundles && yarn run compile:server && yarn run generate:prerender",
     "build:ssr": "yarn run build:client-and-server-bundles && yarn run compile:server",
     "compile:server": "tsc -p server.tsconfig.json",
