@@ -24,7 +24,13 @@ registerLocaleData(localeZh, 'zh');
     ]),
     TransferHttpCacheModule
   ],
-  providers: [],
+  providers: [
+    { provide: 'CURRENT_LANGUAGE', useFactory: getCurrentLanguage }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function getCurrentLanguage() {
+  return (typeof window !== "undefined") ? window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') : 'en';
+}

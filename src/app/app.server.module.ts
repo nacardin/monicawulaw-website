@@ -13,5 +13,12 @@ import { AppComponent } from './app.component';
     ServerTransferStateModule,
   ],
   bootstrap: [AppComponent],
+  providers: [
+    { provide: 'CURRENT_LANGUAGE', useFactory: getCurrentLanguage }
+  ],
 })
 export class AppServerModule { }
+
+export function getCurrentLanguage() {
+  return 'en';
+}
